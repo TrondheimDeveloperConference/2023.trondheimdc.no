@@ -145,18 +145,18 @@ add_action("acf/init", function () {
         "category" => "trondheimdc"
     ]);
 
-    acf_register_block_type([
-        "name" => "list-logos",
-        "title" => "List logos",
-        "render_template" => "blocks/list-logos.php",
-        "mode" => "edit",
-        "supports" => [
-            "mode" => true,
-            "align" => false,
-            "jsx" => true,
-        ],
-        "category" => "trondheimdc"
-    ]);
+    // acf_register_block_type([
+    //     "name" => "list-logos",
+    //     "title" => "List logos",
+    //     "render_template" => "blocks/list-logos.php",
+    //     "mode" => "edit",
+    //     "supports" => [
+    //         "mode" => true,
+    //         "align" => false,
+    //         "jsx" => true,
+    //     ],
+    //     "category" => "trondheimdc"
+    // ]);
 
     
 });

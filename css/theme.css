@@ -7496,18 +7496,34 @@ div.block.program {
   margin: 20px 0;
 }
 
-div.block.program p {
+div.block.program div.filter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 991.98px) {
+  div.block.program div.filter {
+    flex-direction: column;
+  }
+}
+
+div.block.program div.filter p {
+  display: inline-block;
   margin: 10px 0 30px 0;
   text-align: right;
 }
 
 @media (max-width: 991.98px) {
-  div.block.program p {
+  div.block.program div.filter p {
     text-align: left;
+    display: block;
+    margin: 10px 0 15px 0;
   }
 }
 
-div.block.program p span {
+div.block.program div.filter button.filter-program {
+  all: unset;
+  height: 30px;
   display: inline-block;
   margin-left: 20px;
   border: 1px solid #FF8675;
@@ -7518,15 +7534,20 @@ div.block.program p span {
 }
 
 @media (max-width: 991.98px) {
-  div.block.program p span {
-    margin-top: 15px;
-    margin-left: 0;
+  div.block.program div.filter button.filter-program {
+    margin: 5px 0 15px 0;
+    width: 20%;
+    text-align: center;
   }
 }
 
-div.block.program p span.active {
+div.block.program div.filter button.filter-program.active {
   background-color: #FF8675;
   color: #292929;
+}
+
+div.block.program div.filter button:focus {
+  border: 2px solid #fff;
 }
 
 @media (max-width: 991.98px) {
@@ -7658,7 +7679,11 @@ div.block.program div.program-row div.row div.card span.hall {
   left: 15px;
 }
 
-div.block.program div.program-row div.row div.card span.checkbox {
+div.block.program div.program-row div.row div.card button.checkbox {
+  all: unset;
+  position: absolute;
+  top: 5px;
+  font-size: 12px;
   right: 15px;
   cursor: pointer;
   background-image: url("../images/elements/Checked=False.png");
@@ -7666,6 +7691,10 @@ div.block.program div.program-row div.row div.card span.checkbox {
   background-position: right;
   background-size: 20px;
   padding-right: 24px;
+}
+
+div.block.program div.program-row div.row div.card button:focus {
+  border: 2px solid #292929;
 }
 
 div.block.program div.program-row div.row div.card a {
@@ -7695,7 +7724,7 @@ div.block.program div.program-row div.row div.card.active {
   background-color: #80BE8A;
 }
 
-div.block.program div.program-row div.row div.card.active span.checkbox {
+div.block.program div.program-row div.row div.card.active button.checkbox {
   background-image: url("../images/elements/Checked=True.png");
 }
 
@@ -7770,7 +7799,7 @@ div.block.half-image-half-innerblock {
 
 div.block.half-image-half-innerblock div.container-fluid div.row div.image {
   background-repeat: no-repeat;
-  background-position: right 35px top;
+  background-position: right 35px top 15px;
   background-size: contain;
   width: 100%;
   height: 680px;
@@ -8074,29 +8103,29 @@ div.block.filter-speakers ul li:before {
   content: none;
 }
 
-div.block.list-logos {
+div.list-logos {
   margin: 30px 0;
 }
 
-div.block.list-logos div.row {
+div.list-logos div.row {
   padding: 20px 0;
 }
 
-div.block.list-logos div.row div.single-logo {
-  height: 30px;
+div.list-logos div.row div.single-logo {
+  height: 35px;
 }
 
-div.block.list-logos div.row div.single-logo a {
+div.list-logos div.row div.single-logo a {
   display: block;
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  opacity: 0.6;
+  opacity: 1;
 }
 
-div.block.list-logos div.row div.single-logo a:hover {
-  opacity: 1;
+div.list-logos div.row div.single-logo a:hover {
+  opacity: 0.7;
 }
 
 div.single-speaker div.add-talk {
@@ -8118,7 +8147,8 @@ div.single-speaker div.add-talk {
   }
 }
 
-div.single-speaker div.add-talk p {
+div.single-speaker div.add-talk button {
+  all: unset;
   color: #A9DDB1;
   border: 1px solid #A9DDB1;
   padding: 12px 18px;
@@ -8128,14 +8158,18 @@ div.single-speaker div.add-talk p {
 }
 
 @media (max-width: 991.98px) {
-  div.single-speaker div.add-talk p {
+  div.single-speaker div.add-talk button {
     margin: 0 15px 0 0;
   }
 }
 
-div.single-speaker div.add-talk p.active {
+div.single-speaker div.add-talk button.active {
   background-color: #A9DDB1;
   color: #292929;
+}
+
+div.single-speaker div.add-talk button:focus {
+  border: 2px solid #fff;
 }
 
 div.single-speaker div.col-12, div.single-speaker div.about {

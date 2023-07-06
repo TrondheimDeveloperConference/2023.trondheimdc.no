@@ -41,7 +41,7 @@ if (!is_countable($speakers) || count($speakers) == 0) {
                     </div>
                     <div class="col-12 col-md-8 speaker-info">
                         <?= get_field("intro", $speaker->ID) ?>
-                        <p class="name-title"><?= get_the_title($speaker->ID) ?> - <?= get_field("firm", $speaker->ID) ?></p>
+                        <p class="name-title"><?= get_the_title($speaker->ID) ?> <?= (!empty(get_field("firm", $speaker->ID)) ?  ' - ' . get_field("firm", $speaker->ID) . ' ' : "")  ?></p>
                         <p class="language <?= get_field("language", $speaker->ID) ?>"><?= get_field("language", $speaker->ID) ?></p>
 
                         <?php if (!empty($categories)) { ?>

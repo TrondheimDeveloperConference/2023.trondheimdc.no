@@ -7,37 +7,56 @@ jQuery(document).ready(function($)
   });
 
 
-    $(".block.filter-speakers li").on("click", function() {
-        var selectedFilters = [];
+  var urlParams = new URLSearchParams(window.location.search);
+  var cat = urlParams.get('cat');
 
-        // Toggle the active class
-        $(this).toggleClass("active");
+  if (cat) {
+    var filterListItem = $(".block.filter-speakers li[data-filter='" + cat + "']");
+    filterListItem.addClass("active");
+    runFilter();
+  }
 
-        // Get the selected filters
-        $(".block.filter-speakers li.active").each(function() {
-          selectedFilters.push($(this).data("filter"));
-        });
+  $(".block.filter-speakers li").on("click", function() {
+    $(this).toggleClass("active");
+    runFilter();
+  });
 
-        // Show/hide the speakers based on the selected filters
-        if (selectedFilters.length > 0) {
-          $(".block.list-speakers a").addClass("hidden"); // Hide all speakers
-          $(".block.list-speakers a").each(function() {
-            var speakerFilters = $(this).data("filter").split(" ");
-            var matches = selectedFilters.filter(function(filter) {
-              return speakerFilters.includes(filter);
-            });
-            if (matches.length > 0) {
-              $(this).removeClass("hidden"); // Show the speaker
-            }
-          });
-        } else {
-          $(".block.list-speakers a").removeClass("hidden"); // Show all speakers
-        }
+  $(".block.filter-speakers li").attr("tabindex", "0"); // Make filter list items focusable
+
+  $(".block.filter-speakers li").on("keydown", function(e) {
+    if (e.which === 13 || e.keyCode === 13) {
+      $(this).toggleClass("active");
+      runFilter();
+      return false; // Prevent default behavior of Enter key
+    }
+  });
+
+  function runFilter() {
+    var selectedFilters = [];
+
+    // Get the selected filters
+    $(".block.filter-speakers li.active").each(function() {
+      selectedFilters.push($(this).data("filter"));
     });
 
-   
+    // Show/hide the speakers based on the selected filters
+    if (selectedFilters.length > 0) {
+      $(".block.list-speakers a").addClass("hidden"); // Hide all speakers
+      $(".block.list-speakers a").each(function() {
+        var speakerFilters = $(this).data("filter").split(" ");
+        var matches = selectedFilters.filter(function(filter) {
+          return speakerFilters.includes(filter);
+        });
+        if (matches.length > 0) {
+          $(this).removeClass("hidden"); // Show the speaker
+        }
+      });
+    } else {
+      $(".block.list-speakers a").removeClass("hidden"); // Show all speakers
+    }
+  }
 
-    
+
   function toggleCardActiveState(cardId) {
       const card = $(`[data-id="${cardId}"]`);
       card.toggleClass("active");
@@ -47,7 +66,7 @@ jQuery(document).ready(function($)
       localStorage.setItem(cardId, isActive);
   }
 
-  $("div.card span.checkbox").on("click", function() {
+  $("div.card button.checkbox").on("click", function() {
       const cardId = $(this).parent().attr("data-id");
       toggleCardActiveState(cardId);
   });
@@ -61,7 +80,7 @@ jQuery(document).ready(function($)
   });
 
 
-  $('.button').on('click', function() {
+  $('.filter-program').on('click', function() {
     const button = $(this);
     const isActive = button.hasClass('active');
     
@@ -88,7 +107,7 @@ jQuery(document).ready(function($)
   });
 
 
-  $('div.single-speaker div.add-talk p').each(function() {
+  $('div.single-speaker div.add-talk button').each(function() {
     const talkId = $(this).attr('data-id');
     const isActive = localStorage.getItem(talkId) === 'true';
     
@@ -100,7 +119,7 @@ jQuery(document).ready(function($)
     $('.card[data-id="' + talkId + '"]').toggleClass('not-in-list', !isActive);
   });
   
-  $('div.single-speaker div.add-talk p').on('click', function() {
+  $('div.single-speaker div.add-talk button').on('click', function() {
     const talkId = $(this).attr('data-id');
     const isActive = localStorage.getItem(talkId) === 'true';
 
@@ -115,7 +134,7 @@ jQuery(document).ready(function($)
     $(this).text(!isActive ? 'Remove talk from my list' : 'Add talk to my list');
   });
   
-  $('.button').on('click', function() {
+  $('.filter-program').on('click', function() {
     $(this).toggleClass('active');
     
 
@@ -126,7 +145,7 @@ jQuery(document).ready(function($)
     }
   });
   
-  $('.button').on('click', function() {
+  $('.filter-program').on('click', function() {
     $(this).toggleClass('active');
     
 

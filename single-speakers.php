@@ -27,7 +27,7 @@
                 <h1><?= get_field("intro") ?></h1>
             <?php } ?>
             <div class="add-talk">
-                <p data-id="<?= $post->ID?>">Add talk to my list</p>
+                <button data-id="<?= $post->ID?>">Add talk to my list</button>
             </div>
             
             <?php the_content(); ?>

@@ -12,7 +12,7 @@
     <ul>
         <?php if (!empty($cats)) { ?>
             <?php  foreach($cats as $cat) { ?>
-                <li data-filter="<?= $cat->slug ?>" ><?= $cat->name ?></li>
+                <li data-filter="<?= $cat->slug ?>"><?= $cat->name ?></li>
             <?php } ?>
         <?php } ?>
     </ul>

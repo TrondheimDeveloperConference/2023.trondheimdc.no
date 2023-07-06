@@ -11,9 +11,10 @@ if (!is_countable($rows) || count($rows) == 0) {
 
 
 <div class="block program">
-
-    <p><?= get_field("text-before-button") ?><span class="button"><?= get_field("button-text") ?></span></p>
-
+    <div class="filter">
+        <p><?= get_field("text-before-button") ?></p>
+        <button class="filter-program"><?= get_field("button-text") ?></button>
+    </div>
     <div class="row halls">
         <div class="col-2"></div>
         <div class="col-2 hall">
@@ -61,7 +62,7 @@ if (!is_countable($rows) || count($rows) == 0) {
                         <div class="col-12 col-lg-2 card <?= (empty(get_field("intro", $row["sal-cosmos-2"]->ID))) ? "mobile-hide" : "" ?>" data-id=<?= $row["sal-cosmos-2"]->ID ?>>
                             <?php if (!empty($row["sal-cosmos-2"])) { ?>
                                 <span class="hall">SAL COSMOS 2</span>
-                                <span class="checkbox">Going?</span>
+                                <button class="checkbox">Going?</button>
                                 <a href="<?= get_permalink($row["sal-cosmos-2"]->ID) ?>">
                                     <p class="intro"><?= get_field("intro", $row["sal-cosmos-2"]->ID)  ?></p>
                                     <p class="name"><?= get_the_title($row["sal-cosmos-2"]->ID)  ?></p>
@@ -72,7 +73,7 @@ if (!is_countable($rows) || count($rows) == 0) {
                         <div class="col-12 col-lg-2 card <?= (empty(get_field("intro", $row["sal-cosmos-1a"]->ID))) ? "mobile-hide" : "" ?>" data-id=<?= $row["sal-cosmos-1a"]->ID ?>>
                         <?php if (!empty($row["sal-cosmos-1a"])) { ?>
                                 <span class="hall">SAL COSMOS 1A</span>
-                                <span class="checkbox">Going?</span>
+                                <button class="checkbox">Going?</button>
                                 <a href="<?= get_permalink($row["sal-cosmos-1a"]->ID) ?>">
                                     <p class="intro"><?= get_field("intro", $row["sal-cosmos-1a"]->ID)  ?></p>
                                     <p class="name"><?= get_the_title($row["sal-cosmos-1a"]->ID)  ?></p>
@@ -82,7 +83,7 @@ if (!is_countable($rows) || count($rows) == 0) {
                         <div class="col-12 col-lg-2 card <?= (empty(get_field("intro", $row["sal-cosmos-1b"]->ID))) ? "mobile-hide" : "" ?>" data-id=<?= $row["sal-cosmos-1b"]->ID ?>>
                         <?php if (!empty($row["sal-cosmos-1b"])) { ?>
                                 <span class="hall">SAL COSMOS 1B</span>
-                                <span class="checkbox">Going?</span>
+                                <button class="checkbox">Going?</button>
                                 <a href="<?= get_permalink($row["sal-cosmos-1b"]->ID) ?>">
                                     <p class="intro"><?= get_field("intro", $row["sal-cosmos-1b"]->ID)  ?></p>
                                     <p class="name"><?= get_the_title($row["sal-cosmos-1b"]->ID)  ?></p>
@@ -92,7 +93,7 @@ if (!is_countable($rows) || count($rows) == 0) {
                         <div class="col-12 col-lg-2 card <?= (empty(get_field("intro", $row["sal-cosmos-3a"]->ID))) ? "mobile-hide" : "" ?>" data-id=<?= $row["sal-cosmos-3a"]->ID ?>>
                         <?php if (!empty($row["sal-cosmos-3a"])) { ?>
                                 <span class="hall">SAL COSMOS 3A</span>
-                                <span class="checkbox">Going?</span>
+                                <button class="checkbox">Going?</button>
                                 <a href="<?= get_permalink($row["sal-cosmos-3a"]->ID) ?>">
                                     <p class="intro"><?= get_field("intro", $row["sal-cosmos-3a"]->ID)  ?></p>
                                     <p class="name"><?= get_the_title($row["sal-cosmos-3a"]->ID)  ?></p>
@@ -102,7 +103,7 @@ if (!is_countable($rows) || count($rows) == 0) {
                         <div class="col-12 col-lg-2 card <?= (empty(get_field("intro", $row["sal-cosmos-3b"]->ID))) ? "mobile-hide" : "" ?>" data-id=<?= $row["sal-cosmos-3b"]->ID ?>>
                             <?php if (!empty($row["sal-cosmos-3b"])) { ?>
                                 <span class="hall">SAL COSMOS 3B</span>
-                                <span class="checkbox">Going?</span>
+                                <button class="checkbox">Going?</button>
                                 <a href="<?= get_permalink($row["sal-cosmos-3b"]->ID) ?>">
                                     <p class="intro"><?= get_field("intro", $row["sal-cosmos-3b"]->ID)  ?></p>
                                     <p class="name"><?= get_the_title($row["sal-cosmos-3b"]->ID)  ?></p>
