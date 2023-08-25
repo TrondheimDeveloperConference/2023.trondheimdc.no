@@ -7259,10 +7259,33 @@ html {
   }
 }
 
-html, body, h1, h2, h3, h4, h5, h6, header, footer, nav, section, div, span, p, ol, ul, li, th, td, input, textarea, select, option {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+footer,
+nav,
+section,
+div,
+span,
+p,
+ol,
+ul,
+li,
+th,
+td,
+input,
+textarea,
+select,
+option {
   padding: 0;
   margin: 0;
-  font-family: 'Robof', sans-serif;
+  font-family: "Robof", sans-serif;
   font-weight: 400;
 }
 
@@ -7283,7 +7306,21 @@ body {
   padding-top: 98px;
 }
 
-nav, section, div, span, p, ol, ul, li, th, td, input, textarea, select, option, a {
+nav,
+section,
+div,
+span,
+p,
+ol,
+ul,
+li,
+th,
+td,
+input,
+textarea,
+select,
+option,
+a {
   font-size: 18px;
   line-height: 28px;
   color: #fff;
@@ -7315,7 +7352,7 @@ p {
 
 .col-12 ul li:before {
   content: "—";
-  color: #FF8675;
+  color: #ff8675;
   margin-right: 10px;
 }
 
@@ -7358,39 +7395,46 @@ header div.container div.row {
   align-items: center;
 }
 
-header div.container div.row div.main-menu, header div.container div.row div.secondary-menu {
+header div.container div.row div.main-menu,
+header div.container div.row div.secondary-menu {
   text-align: right;
 }
 
-header div.container div.row div.main-menu ul, header div.container div.row div.secondary-menu ul {
+header div.container div.row div.main-menu ul,
+header div.container div.row div.secondary-menu ul {
   list-style: none;
 }
 
-header div.container div.row div.main-menu ul li, header div.container div.row div.secondary-menu ul li {
+header div.container div.row div.main-menu ul li,
+header div.container div.row div.secondary-menu ul li {
   display: inline;
   margin-left: 15px;
 }
 
 @media (min-width: 992px) {
-  header div.container div.row div.main-menu ul li.current-menu-item a, header div.container div.row div.secondary-menu ul li.current-menu-item a {
-    color: #FF8675;
+  header div.container div.row div.main-menu ul li.current-menu-item a,
+  header div.container div.row div.secondary-menu ul li.current-menu-item a {
+    color: #ff8675;
     padding-bottom: 5px;
-    border-bottom: 4px solid #FF8675;
+    border-bottom: 4px solid #ff8675;
     border-radius: 124px 20px 19px;
   }
 }
 
-header div.container div.row div.main-menu ul li a, header div.container div.row div.secondary-menu ul li a {
+header div.container div.row div.main-menu ul li a,
+header div.container div.row div.secondary-menu ul li a {
   text-decoration: none;
   color: #fff;
 }
 
-header div.container div.row div.main-menu ul li:before, header div.container div.row div.secondary-menu ul li:before {
+header div.container div.row div.main-menu ul li:before,
+header div.container div.row div.secondary-menu ul li:before {
   display: none;
 }
 
 @media (max-width: 991.98px) {
-  header div.container div.row div.main-menu, header div.container div.row div.secondary-menu {
+  header div.container div.row div.main-menu,
+  header div.container div.row div.secondary-menu {
     display: none;
     position: fixed;
     top: 98px;
@@ -7399,20 +7443,24 @@ header div.container div.row div.main-menu ul li:before, header div.container di
     z-index: 9999;
     background-color: #292929;
   }
-  header div.container div.row div.main-menu.open, header div.container div.row div.secondary-menu.open {
+  header div.container div.row div.main-menu.open,
+  header div.container div.row div.secondary-menu.open {
     display: block;
   }
-  header div.container div.row div.main-menu ul, header div.container div.row div.secondary-menu ul {
+  header div.container div.row div.main-menu ul,
+  header div.container div.row div.secondary-menu ul {
     text-align: center;
     padding: 0 0 30px 0;
   }
-  header div.container div.row div.main-menu ul li, header div.container div.row div.secondary-menu ul li {
+  header div.container div.row div.main-menu ul li,
+  header div.container div.row div.secondary-menu ul li {
     display: block;
     padding: 15px 0 15px 0;
   }
-  header div.container div.row div.main-menu ul li a, header div.container div.row div.secondary-menu ul li a {
+  header div.container div.row div.main-menu ul li a,
+  header div.container div.row div.secondary-menu ul li a {
     display: block;
-    color: #FF8675;
+    color: #ff8675;
     font-size: 30px;
     text-transform: uppercase;
   }
@@ -7458,7 +7506,8 @@ div.page-top {
   }
 }
 
-div.page-top div.row div.image-left, div.page-top div.row div.image-right {
+div.page-top div.row div.image-left,
+div.page-top div.row div.image-right {
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -7526,9 +7575,9 @@ div.block.program div.filter button.filter-program {
   height: 30px;
   display: inline-block;
   margin-left: 20px;
-  border: 1px solid #FF8675;
+  border: 1px solid #ff8675;
   border-radius: 25px;
-  color: #FF8675;
+  color: #ff8675;
   padding: 12px 18px;
   cursor: pointer;
 }
@@ -7542,7 +7591,7 @@ div.block.program div.filter button.filter-program {
 }
 
 div.block.program div.filter button.filter-program.active {
-  background-color: #FF8675;
+  background-color: #ff8675;
   color: #292929;
 }
 
@@ -7557,7 +7606,7 @@ div.block.program div.filter button:focus {
 }
 
 div.block.program div.halls div.hall {
-  color: #FF8675;
+  color: #ff8675;
 }
 
 @media only screen and (max-width: 1070px) {
@@ -7646,7 +7695,7 @@ div.block.program div.program-row div.row div.time div.line {
 
 div.block.program div.program-row div.row div.card {
   position: relative;
-  background-color: #817ABC;
+  background-color: #817abc;
   border: 10px solid #292929;
   min-height: 200px;
 }
@@ -7721,7 +7770,7 @@ div.block.program div.program-row div.row div.card p.name {
 }
 
 div.block.program div.program-row div.row div.card.active {
-  background-color: #80BE8A;
+  background-color: #80be8a;
 }
 
 div.block.program div.program-row div.row div.card.active button.checkbox {
@@ -7735,7 +7784,7 @@ div.block.program div.program-row div.row div.card.not-in-list {
 
 div.block.program div.program-row div.row div.whole-card {
   padding: 0;
-  background-color: #80BE8A;
+  background-color: #80be8a;
   background-image: url("../images/elements/Rectangle 3.png");
   background-repeat: repeat-x;
   background-position: center;
@@ -7747,13 +7796,15 @@ div.block.program div.program-row div.row div.whole-card div.row {
   padding: 0;
 }
 
-div.block.program div.program-row div.row div.whole-card div.row div.start-time, div.block.program div.program-row div.row div.whole-card div.row div.endtime {
-  background-color: #80BE8A;
+div.block.program div.program-row div.row div.whole-card div.row div.start-time,
+div.block.program div.program-row div.row div.whole-card div.row div.endtime {
+  background-color: #80be8a;
   color: #292929;
 }
 
 @media (max-width: 991.98px) {
-  div.block.program div.program-row div.row div.whole-card div.row div.start-time, div.block.program div.program-row div.row div.whole-card div.row div.endtime {
+  div.block.program div.program-row div.row div.whole-card div.row div.start-time,
+  div.block.program div.program-row div.row div.whole-card div.row div.endtime {
     padding: 0 2px;
   }
 }
@@ -7763,7 +7814,7 @@ div.block.program div.program-row div.row div.whole-card div.row div.text {
 }
 
 div.block.program div.program-row div.row div.whole-card div.row div.text span {
-  background-color: #80BE8A;
+  background-color: #80be8a;
   padding: 0 15px;
   color: #292929;
 }
@@ -7773,7 +7824,7 @@ div.block.program div.program-row div.row div.whole-card div.row div.endtime {
 }
 
 div.block.button {
-  background-color: #A9DDB1;
+  background-color: #a9ddb1;
   width: fit-content;
   padding: 18px 24px;
   border-radius: 100px;
@@ -7819,7 +7870,7 @@ div.block.half-image-half-innerblock div.container-fluid div.row div.innerblock 
 }
 
 div.block.fullwidth-purple-innerblock {
-  background-color: #6A63A0;
+  background-color: #6a63a0;
   padding: 50px 0 50px 0;
   position: relative;
 }
@@ -7869,7 +7920,7 @@ div.block.cards-inbetween div.row div.single-card div.top {
   background-repeat: no-repeat;
   background-position: left 45px center;
   background-size: 20px;
-  background-color: #A9DDB1;
+  background-color: #a9ddb1;
   padding: 8px 75px;
   color: #292929;
   border-radius: 0px 41px 0px 0px;
@@ -8061,8 +8112,8 @@ div.block.list-speakers div.row a ul {
 div.block.list-speakers div.row a ul li {
   display: inline-block;
   color: #292929;
-  border: 1px solid #A9DDB1;
-  background-color: #A9DDB1;
+  border: 1px solid #a9ddb1;
+  background-color: #a9ddb1;
   font-size: 14px;
   padding: 0 12px;
   border-radius: 8px;
@@ -8086,8 +8137,8 @@ div.block.filter-speakers ul {
 
 div.block.filter-speakers ul li {
   display: inline-block;
-  border: 1px solid #A9DDB1;
-  color: #A9DDB1;
+  border: 1px solid #a9ddb1;
+  color: #a9ddb1;
   border-radius: 80px;
   padding: 6px 15px;
   margin: 10px 10px;
@@ -8095,7 +8146,7 @@ div.block.filter-speakers ul li {
 }
 
 div.block.filter-speakers ul li.active {
-  background-color: #A9DDB1;
+  background-color: #a9ddb1;
   color: #292929;
 }
 
@@ -8149,8 +8200,8 @@ div.single-speaker div.add-talk {
 
 div.single-speaker div.add-talk button {
   all: unset;
-  color: #A9DDB1;
-  border: 1px solid #A9DDB1;
+  color: #a9ddb1;
+  border: 1px solid #a9ddb1;
   padding: 12px 18px;
   border-radius: 100px;
   margin: 0 0 0 95px;
@@ -8164,7 +8215,7 @@ div.single-speaker div.add-talk button {
 }
 
 div.single-speaker div.add-talk button.active {
-  background-color: #A9DDB1;
+  background-color: #a9ddb1;
   color: #292929;
 }
 
@@ -8172,7 +8223,8 @@ div.single-speaker div.add-talk button:focus {
   border: 2px solid #fff;
 }
 
-div.single-speaker div.col-12, div.single-speaker div.about {
+div.single-speaker div.col-12,
+div.single-speaker div.about {
   margin: 30px 0;
 }
 
@@ -8199,7 +8251,7 @@ div.single-speaker div.col-md-7 {
 
 div.single-speaker div.col-md-7.key-topics a {
   margin: 5px 10px 5px 0;
-  background-color: #80BE8A;
+  background-color: #80be8a;
   color: #292929;
   padding: 5px 10px;
   border-radius: 8px;
@@ -8249,12 +8301,18 @@ div.single-speaker div.col-md-7.social-media a.twitter {
   background-image: url("../images/elements/twitter_white.png");
 }
 
+div.single-speaker div.col-md-7.social-media a.homepage {
+  background-image: url("../images/elements/homepage.png");
+}
+
 div.single-speaker div.col-md-7 div.row {
   width: 100%;
   align-items: center;
 }
 
-div.single-speaker div.title, div.single-speaker div.social-media, div.single-speaker div.language {
+div.single-speaker div.title,
+div.single-speaker div.social-media,
+div.single-speaker div.language {
   margin: 10px 0 0 0;
   font-size: 26px;
   line-height: 35px;
@@ -8284,10 +8342,11 @@ div.single-speaker div.about-text {
 
 footer {
   position: relative;
-  background-color: #A9DDB1;
+  background-color: #a9ddb1;
 }
 
-footer div.darkgreen, footer div.lightgreen {
+footer div.darkgreen,
+footer div.lightgreen {
   width: 100%;
   position: absolute;
   left: 0;
@@ -8296,24 +8355,24 @@ footer div.darkgreen, footer div.lightgreen {
 
 footer div.darkgreen {
   top: 0;
-  background-color: #80BE8A;
+  background-color: #80be8a;
 }
 
 footer div.lightgreen {
   top: 40px;
-  background-color: #94CC9D;
+  background-color: #94cc9d;
 }
 
 footer div.container {
   padding-top: 80px;
   padding: 150px 15px 50px 15px;
   min-height: 272px;
-  background-color: #A9DDB1;
+  background-color: #a9ddb1;
 }
 
 footer div.container div.row {
   align-items: center;
-  background-color: #A9DDB1;
+  background-color: #a9ddb1;
 }
 
 footer div.container div.row div.footer-logo {
@@ -8385,7 +8444,9 @@ footer div.container div.row div.socialmedia ul li:before {
   }
 }
 
-footer div.container div.row div.footer-logo, footer div.container div.row div.middle-text, footer div.container div.row div.socialmedia {
+footer div.container div.row div.footer-logo,
+footer div.container div.row div.middle-text,
+footer div.container div.row div.socialmedia {
   margin: 25px 0;
 }
 
