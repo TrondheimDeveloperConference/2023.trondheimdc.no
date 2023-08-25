@@ -818,8 +818,15 @@ div.block {
         }
 
         div.speaker-info {
-          font-size: 30px;
-          line-height: 40px;
+          h3 {
+            font-size: 30px;
+            line-height: 40px;
+            text-decoration: underline;
+          }
+
+          h3:hover {
+            color: #80be8a;
+          }
 
           @include media-breakpoint-down(md) {
             font-size: 25px;

@@ -8064,9 +8064,14 @@ div.block.list-speakers div.row a div.speaker-image-container div.speaker-image 
   height: 100%;
 }
 
-div.block.list-speakers div.row a div.speaker-info {
+div.block.list-speakers div.row a div.speaker-info h3 {
   font-size: 30px;
   line-height: 40px;
+  text-decoration: underline;
+}
+
+div.block.list-speakers div.row a div.speaker-info h3:hover {
+  color: #80be8a;
 }
 
 @media (max-width: 991.98px) {
