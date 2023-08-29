@@ -92,7 +92,7 @@ if (!is_countable($rows) || count($rows) == 0) {
                         </div>
                         <div class="col-12 col-lg-2 card <?= (empty(get_field("intro", $row["sal-cosmos-3a"]->ID))) ? "mobile-hide" : "" ?>" data-id=<?= $row["sal-cosmos-3a"]->ID ?>>
                         <?php if (!empty($row["sal-cosmos-3a"])) { ?>
-                                <span class="hall">SAL COSMOS 3A</span>
+                                <span class="hall">SAL COSMOS 3AB</span>
                                 <button class="checkbox">Going?</button>
                                 <a href="<?= get_permalink($row["sal-cosmos-3a"]->ID) ?>">
                                     <p class="intro"><?= get_field("intro", $row["sal-cosmos-3a"]->ID)  ?></p>
@@ -102,7 +102,7 @@ if (!is_countable($rows) || count($rows) == 0) {
                         </div>
                         <div class="col-12 col-lg-2 card <?= (empty(get_field("intro", $row["sal-cosmos-3b"]->ID))) ? "mobile-hide" : "" ?>" data-id=<?= $row["sal-cosmos-3b"]->ID ?>>
                             <?php if (!empty($row["sal-cosmos-3b"])) { ?>
-                                <span class="hall">SAL COSMOS 3B</span>
+                                <span class="hall">SAL COSMOS 3CD</span>
                                 <button class="checkbox">Going?</button>
                                 <a href="<?= get_permalink($row["sal-cosmos-3b"]->ID) ?>">
                                     <p class="intro"><?= get_field("intro", $row["sal-cosmos-3b"]->ID)  ?></p>
