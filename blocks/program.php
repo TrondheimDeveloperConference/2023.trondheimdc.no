@@ -27,10 +27,10 @@ if (!is_countable($rows) || count($rows) == 0) {
             SAL COSMOS 1B
         </div>
         <div class="col-2 hall">
-            SAL COSMOS 3A
+            SAL COSMOS 3AB
         </div>
         <div class="col-2 hall">
-            SAL COSMOS 3B
+            SAL COSMOS 3CD
         </div>
     </div>
 
